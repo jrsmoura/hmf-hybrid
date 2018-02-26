@@ -1,11 +1,12 @@
-# hmf-hybrid
+# Hamiltonian Mean Field simulation using OpenMP
+
 ### Molecular dynamics simulation of a *N*-particles in a cirunference of unitary radius.
 
 Files | Descriotion
 ------------ | -------------
-main-openmp.c | XXXXXX
-openmpFuncs.c | XXXXXX
-openmpLibs.h  | XXXXXX
+main-openmp.c | Main part of the code
+openmpFuncs.c | Contains all functions
+openmpLibs.h  | Functions headers
 
 
 **Code Functions**
@@ -27,13 +28,14 @@ Calculates the potential energy per particle from the system.
 ```C++
 void Force(long, double *, double *, double *, double *);
 ```
+Calculates the mean force from the system
 
-
-```
+```C++
 void Integration(long, double, double *, double *, double *, double *, double *);
 ```
+Integrate equations of motion using a sympletic integrator, fourth order Yoshida.
 
 ```C++
 float ran2(long *);
 ```
-Generate a uniform distributed random number between 0 and 1.
+Generate a uniform distributed random number between 0 and 1 (Numerical Recipies C/C++, 3rd Ed.)
