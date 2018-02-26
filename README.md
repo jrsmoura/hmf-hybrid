@@ -9,7 +9,7 @@ openmpLibs.h  | XXXXXX
 
 
 **Code Functions**
-```
+```C++
 void WaterBag(long, long *, double, double, double *, double *);
 void KineticEnergy(long, double *, double *);
 void PotentialEnergy(long, double *, double *, double, double);
