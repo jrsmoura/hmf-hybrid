@@ -43,5 +43,5 @@ Generate a uniform distributed random number between 0 and 1 (Numerical Recipies
 
 ## The figures below show some basics results that can be obtain
 
-![Time evolution of inetic and potential energies per particle](/hmf-hybrid/Energies.png)
+![Time evolution of inetic and potential energies per particle](/serial-openmp/Energies.png)
 Format: ![Alt Text](url)
