@@ -1,3 +1,0 @@
-set logscale x
-plot  'p_0.00/viral.dat' u 1:4 w line, 'p_0.10/viral.dat' u 1:4 w line, 'p_0.20/viral.dat' u 1:4 w line, 'p_0.30/viral.dat' u 1:4 w line, 'p_0.40/viral.dat' u 1:4 w line, 'p_0.50/viral.dat' u 1:4 w line, 'p_0.60/viral.dat' u 1:4 w line, 'p_0.70/viral.dat' u 1:4 w line, 'p_0.80/viral.dat' u 1:4 w line, 'p_1.80/viral.dat' u 1:4 w line, 'p_1.00/viral.dat' u 1:4 w line, 'p_1.00/viral.dat' u 1:4 w line, 'p_1.30/viral.dat' u 1:4 w line, 'p_1.50/viral.dat' u 1:4 w line, 'p_1.70/viral.dat' u 1:4 w line, 'p_1.90/viral.dat' u 1:4 w line, 'p_2.10/viral.dat' u 1:4 w line, 'p_2.30/viral.dat' u 1:4 w line, 'p_3.50/viral.dat' u 1:4 w line
-
