@@ -39,3 +39,9 @@ Integrate equations of motion using a sympletic integrator, fourth order Yoshida
 float ran2(long *);
 ```
 Generate a uniform distributed random number between 0 and 1 (Numerical Recipies C/C++, 3rd Ed.)
+
+
+## The figures below show some basics results that can be obtain
+
+![Time evolution of inetic and potential energies per particle](/hmf-hybrid/Energies.png)
+Format: ![Alt Text](url)
