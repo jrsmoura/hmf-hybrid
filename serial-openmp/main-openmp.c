@@ -11,7 +11,6 @@
 
 int main(int argc, char **argv)
 {
-	printf("1\n");
 	long n, seed, idum;
 	double p0, r0;
 	double energKin, energPot, magX, magY, energ, energ0, error;
@@ -23,8 +22,6 @@ int main(int argc, char **argv)
 	FILE *fmag = fopen("./magnetOMP.dat", "w");
 	FILE *finalSpace = fopen("./finalPhaseOMP.dat", "w");
 
-	printf("2\n");
-
 	FILE *in = fopen("./input.in", "r");
 	fscanf(in, "%ld", &n);
 	fscanf(in, "%lf", &finalTime);
@@ -34,8 +31,6 @@ int main(int argc, char **argv)
 	fscanf(in, "%lf", &r0);
 	fscanf(in, "%ld", &seed);
 	fclose(in);
-
-	printf("3\n");	
 	
 	idum = -seed;
 
@@ -45,25 +40,17 @@ int main(int argc, char **argv)
 	magX = ran2(&idum);
 	magY = ran2(&idum);
 
-	printf("4\n");
-
 	double *r = (double *)malloc((double)n * sizeof(double));
 	double *p = (double *)malloc((double)n * sizeof(double));
 	double *force = (double *)malloc((double)n * sizeof(double));
-
-	printf("5\n");
 	
 	WaterBag(n, &idum, p0, r0, r, p);
-
-	printf("6\n");
 
 	#pragma omp parallel for
 	for (long i = 0; i < n; i++)
 	{
 		fprintf(init, "%lf\t%lf\n", r[i], p[i]);
 	}
-	
-	printf("7\n");
 	
 	KineticEnergy(n, &energKin, p);
 	Force(n, force, r, &magX, &magY);
